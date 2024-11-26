@@ -1,0 +1,209 @@
+.add-button{
+    width: 20%; 
+    position: relative; /* Cambia la posición */
+    
+    padding: 5px 10px; /* Espaciado interno */
+    font-size: 1em;
+    cursor: pointer;
+    border: 2px solid #4fc518; /* Borde azul (ajusta el color según tu diseño) */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #4fc518; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+}
+.add-button:hover{
+  background-color: #45ac15; /* Color de fondo más oscuro al pasar el mouse */
+  border-color: #45ac15; /* Cambiar el color del borde al pasar el mouse */
+}
+
+.answers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.answers-table th,
+.answers-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  vertical-align: middle; /* Alinea verticalmente el contenido */
+}
+
+.answers-table th {
+  background-color: #f4f4f4;
+  color: #313131;
+}
+
+.answers-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.answers-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.answers-table td {
+  word-wrap: break-word; /* Permite que el texto largo salte de línea */
+  max-width: 200px; /* Ajusta esto si necesitas más espacio */
+}
+
+.answer-id-column {
+  display: flex; /* Usa flexbox para alinear el contenido horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  text-align: left; /* Alinea el contenido a la izquierda */
+  max-width: 200px; /* Igual que las otras celdas */
+  white-space: normal; /* Permite saltos de línea */
+}
+
+.folder-icon {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-left: 8px;
+  vertical-align: middle;
+  /* No es necesario mantener vertical-align aquí si usamos flex */
+}
+
+
+.toolbar {
+  display: flex; /* Alinea los elementos en una fila */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 20px; /* Espacio debajo de la barra */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f9f9f9; /* Color de fondo para diferenciar la barra */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.category-selector {
+  font-size: 14px; /* Tamaño de texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 6px; /* Bordes redondeados */
+  background-color: #fff; /* Fondo blanco */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el selector */
+  width: 200px;
+}
+.Title {
+  font-size: 30px; /* Tamaño reducido del título */
+  font-weight: bold; /* Negrita para mayor énfasis */
+  color: #2c3e50; /* Un color elegante, oscuro y profesional */
+  text-align: left; /* Alinea el título a la izquierda */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  padding-top: 20px; /* Espacio adicional arriba del título */
+  padding-bottom: 20px; /* Espacio adicional abajo del título */
+  background-color: #ffffff; /* Fondo blanco para el título */
+  padding-left: 20px; /* Un pequeño padding a la izquierda para separación */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  line-height: 1.5; /* Aumenta la altura de línea para dar más espacio vertical */
+}
+.modal-Querys {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-Querys-content {
+  background-color: white;
+  padding: 30px; /* Más espacio interior */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 700px; /* Aumentar el ancho */
+  height: 500px;
+  max-width: 90%; /* Mantener responsive */
+  max-height: 80%; /* Limitar la altura máxima */
+  overflow-y: auto; /* Agregar scroll si el contenido excede el tamaño */
+}
+
+.modal-Querys-title {
+  color: #000000;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px; /* Reducir el espacio entre el título y los inputs */
+}
+
+.label-categoria1 {
+  display: flex; /* Utiliza flexbox para alinear el label e input en una fila */
+  align-items: center; /* Alinea verticalmente el contenido al centro */
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.input-categoria1 {
+  width: 90px; /* Ajusta el ancho específico del input según lo que necesites */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 10px; /* Espacio entre el label y el input */
+  box-sizing: border-box;
+}
+
+.label-pregunta2,
+.label-respuesta3 {
+  display: block;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px; /* Espacio superior entre los labels y los elementos anteriores */
+}
+
+
+.input-pregunta2,
+.input-respuesta3 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 8px; /* Reducir el espacio entre el input y el label */
+  box-sizing: border-box;
+}
+
+.modal-Querys-btn-container {
+  display: flex;
+  justify-content: space-between; /* Para distribuir los botones a los extremos con separación */
+  margin-top: 30px; /* Menos espacio arriba de los botones */
+}
+
+.modal-btn-Guardar1,
+.modal-btn-Cancelar2 {
+  width: 45%; /* Ajusta el ancho para que los botones estén balanceados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+.modal-btn-Guardar1 {
+  border: 2px solid #4fc518; /* Borde verde */
+  background-color: #4fc518; /* Color de fondo verde */
+  color: white; /* Color del texto */
+}
+
+.modal-btn-Guardar1:hover {
+  background-color: #45ac15; /* Color de fondo más oscuro al pasar el mouse */
+  border-color: #45ac15; /* Cambiar el color del borde al pasar el mouse */
+}
+
+.modal-btn-Cancelar2 {
+  border: 2px solid #c43d25; /* Borde rojo */
+  background-color: #c43d25; /* Color de fondo rojo */
+  color: white; /* Color del texto */
+}
+
+.modal-btn-Cancelar2:hover {
+  background-color: #8a2412; /* Color de fondo más oscuro al pasar el mouse */
+  border-color: #8a2412; /* Cambiar el color del borde al pasar el mouse */
+}

@@ -164,8 +164,10 @@ export default function Semesters() {
                 onChange={(e) => setUntil(e.target.value)}
               />
             </label>
+           
             <button className="modal-btn1" onClick={handleAddSemester}>Agregar Semestre</button>
             <button className="modal-btn2" onClick={() => setIsModalOpen(false)}>Cancelar</button>
+          
           </div>
         </div>
       )}
